@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteVotante.Master.cs" Inherits="Desempenio2.MatiasGomez.Site3" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav>
+              <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Votante.aspx">Panel Votante</asp:HyperLink>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <asp:LinkButton ID="lnkCerrarSesion" runat="server" OnClick="lnkCerrarSesion_Click" ForeColor="Red" Font-Bold="true">🚪 Cerrar Sesión</asp:LinkButton>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
